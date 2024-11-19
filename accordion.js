@@ -30,12 +30,14 @@ accordionBtns.forEach((accordion) => {
     const isExapnded = this.getAttribute("aria-expanded") === "true";
     this.setAttribute("aria-expanded", !isExapnded);
     
+    const contentId = this.getAttribute("aria-controls");
+    const content = document.getElementById(contentId);
 
-    let content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px"
+      console.log(scrollHeight);
     }
   });
   

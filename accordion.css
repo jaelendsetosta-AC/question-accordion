@@ -57,3 +57,13 @@ button.accordion:focus {
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
 }
+
+h2 {
+  margin: 0; 
+  padding: 0; 
+}
+
+h2 .accordion {
+  display: block;
+}
+
